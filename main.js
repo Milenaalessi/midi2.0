@@ -1,16 +1,59 @@
 function tocaSom(idElementoAudio){
-    document.querySelector(idElementoAudio).play();
+    const elemento = document.querySelector(idElementoAudio);
+    if(elemento && elemento.localName==='audio'){
+        elemento.play();
+    }
+    else{
+        console.log("Elemento não encontrado");
+    }
 }
-//criando a referência constante ListadeTeclas e buscando a classe.
-const ListadeTeclas = document.querySelectorAll('.tecla');
-//criação de repetição
 
-for(let contador = 0;contador < ListadeTeclas.length;contador++){
-    const teclas = ListadeTeclas[contador];
-    const efeito = teclas.classList[1];
+const listaDeTeclas = document.querySelectorAll(".tecla");
+
+for (let contador = 0; contador < listaDeTeclas.length; contador ++) {
+    const tecla = listaDeTeclas[contador];
+    const efeito = tecla.classList[1];
     const idAudio = `#som_${efeito}`;
-    teclas.onclick = function(){
+    tecla.onclick = function(){
         tocaSom(idAudio);
+    }
+    tecla.onkeydown = function(evento){
+        if(evento.code === 'Space' || evento.code === 'Enter'){
+            tecla.classList.add('ativa');
+        }
+
+    }
+    tecla.onkeyup = function(){
+        tecla.classList.remove('ativa');
+    }
+
+}function tocaSom(idElementoAudio){
+    const elemento = document.querySelector(idElementoAudio);
+    if(elemento && elemento.localName==='audio'){
+        elemento.play();
+    }
+    else{
+        console.log("Elemento não encontrado");
+    }
+}
+
+const listaDeTeclas = document.querySelectorAll(".tecla");
+
+for (let contador = 0; contador < listaDeTeclas.length; contador ++) {
+    const tecla = listaDeTeclas[contador];
+    const efeito = tecla.classList[1];
+    const idAudio = `#som_${efeito}`;
+    tecla.onclick = function(){
+        tocaSom(idAudio);
+    }
+    tecla.onkeydown = function(evento){
+        if(evento.code === 'Space' || evento.code === 'Enter'){
+            tecla.classList.add('ativa');
+        }
+
+    }
+    tecla.onkeyup = function(){
+        tecla.classList.remove('ativa');
     }
 
 }
