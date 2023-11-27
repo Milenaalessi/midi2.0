@@ -8,7 +8,7 @@
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: linear-gradient(45deg, #000000 0%,rgb(35, 138, 57) 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -21,6 +21,45 @@ h1 {
   margin-bottom: 20px;
   font-size: 2rem;
 }
+
+.minecraft {
+  width: 200px;
+}
+
+.creeper {
+  width: 120px;
+}
+
+.ovelha {
+  width: 120px;
+}
+
+.villager {
+  width: 120px;
+}
+
+img{
+  width: 120px;
+}
+.porco {
+  width: 120px;
+} 
+
+.gato {
+  width: 120px;
+}
+
+.esqueleto {
+  width: 120px;
+}
+.zombie {
+  width: 120px;
+}
+
+.rap {
+  width: 120px;
+}
+
 
 .teclado {
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
