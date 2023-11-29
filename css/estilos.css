@@ -27,7 +27,7 @@ h1 {
 }
 
 .enderman {
-  width: 20px;
+  width: 50px;
 }
 
 .creeper {
@@ -39,7 +39,7 @@ h1 {
 }
 
 .villager {
-  width: 100px;
+  width: 80px;
 }
 
 img{
@@ -54,14 +54,14 @@ img{
 }
 
 .esqueleto {
-  width: 100px;
+  width: 80px;
 }
 .zombie {
-  width: 100px;
+  width: 80px;
 }
 
 .rap {
-  width: 120px;
+  width: 100px;
 }
 
 
