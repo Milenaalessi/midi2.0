@@ -23,7 +23,7 @@ h1 {
 }
 
 .minecraft {
-  width: 200px;
+  width: 250px;
 }
 
 .enderman {
@@ -39,7 +39,7 @@ h1 {
 }
 
 .villager {
-  width: 80px;
+  width: 60px;
 }
 
 img{
@@ -54,10 +54,10 @@ img{
 }
 
 .esqueleto {
-  width: 80px;
+  width: 60px;
 }
 .zombie {
-  width: 80px;
+  width: 75px;
 }
 
 .rap {
